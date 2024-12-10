@@ -9,6 +9,9 @@ jobs:
   update-fingerprints:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write  # 允许写入仓库内容
+
     steps:
       # 1. 检出当前仓库
       - name: Checkout repository
